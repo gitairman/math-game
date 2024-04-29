@@ -1,0 +1,42 @@
+Classes
+
+Game
+  turns
+  players
+  endgame
+Player
+  lives
+Turn
+  question
+
+  Roles
+
+  Game
+  State: players, current player
+  Behaviour: startgame, endgame
+
+  Player
+  State: lives
+  Behaviour: reducing lives if wrong question
+
+  Turn
+  State: questions and answers
+  Behaviour: asking questions and responding to answers
+
+  Methods
+
+  Game
+    start_game
+    take_turn
+    check_score
+    end_game
+
+  Player
+    lose_life
+  
+  Turn
+    current_player
+    ask_question
+    get_answer
+    result
+
